@@ -5,14 +5,17 @@ import Navbar from "./components/navbar/Navbar";
 import React from "react";
 import Modal from 'react-modal'
 import BaseRouter from "./baseRouter";
+import Login from './../src/Auth/login';
 
 Modal.setAppElement('#root');
 
 function App() {
   return (
     <div className="App">
-        <Navbar />
-       <BaseRouter/>
+        {/* <Navbar />
+       <BaseRouter/> */}
+       <Login />
+      
     </div>
   );
 }
