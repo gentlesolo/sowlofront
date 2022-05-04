@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import React from "react";
 import Modal from 'react-modal'
 import BaseRouter from "./baseRouter";
+import Login from "./auth/Login";
 
 Modal.setAppElement('#root');
 
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
         <Navbar />
        <BaseRouter/>
+        <Login />
     </div>
   );
 }
