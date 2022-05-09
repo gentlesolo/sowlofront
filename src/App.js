@@ -6,6 +6,7 @@ import React from "react";
 import Modal from 'react-modal'
 import BaseRouter from "./baseRouter";
 import Login from './../src/Auth/login';
+import Register from './../src/Auth/Register';
 
 Modal.setAppElement('#root');
 
