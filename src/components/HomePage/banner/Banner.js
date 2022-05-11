@@ -175,7 +175,7 @@ function Banner() {
                         gutterBottom
                         className={classes.headtext}>
                         The Smartest Social Media<br/>
-                        Platform For Small Business Owners
+                        Management Platform For Small Business Owners
                     </Typography>
                     <Typography
                         variant="subtitle1"

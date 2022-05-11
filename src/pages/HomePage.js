@@ -24,7 +24,7 @@ const HomePage = () => {
         <Cat1/>
       {/*<PopularContent />*/}
           <FeaturedCamp/>
-      <Learning1 />
+      {/*<Learning1 />*/}
       {/*<FeaturedContent />*/}
       {/*<DreamBusiness />*/}
       {/*<Testimonials />*/}

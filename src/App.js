@@ -7,6 +7,7 @@ import Modal from 'react-modal';
 import BaseRouter from "./baseRouter";
 import Login from "./Auth/login";
 import Register from "./Auth/Register";
+import Footer from "./components/footer/Footer";
 
 
 //Modal.setAppElement('#root');
@@ -15,10 +16,12 @@ function App() {
   return (
     <div className="App">
 
-        {/*<Navbar />*/}
-       {/*<BaseRouter/>*/}
+        <Navbar />
+       <BaseRouter/>
        {/* <Login />*/}
-        <Register/>
+       {/* <Register/>*/}
+
+        <Footer/>
 
     </div>
   );
