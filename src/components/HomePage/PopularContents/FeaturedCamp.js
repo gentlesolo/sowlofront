@@ -26,14 +26,14 @@ import affiliate from '../../../assets/images/affiliate.jpeg'
 import website from '../../../assets/images/website.jpg'
 import logistics from '../../../assets/images/logistics.jpg'
 import education from '../../../assets/images/education.png'
-import NewspaperIcon from "@mui/icons-material/Newspaper";
-import NewReleasesIcon from "@mui/icons-material/NewReleases";
-import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
-import FeaturedVideoIcon from "@mui/icons-material/FeaturedVideo";
-import RadioIcon from "@mui/icons-material/Radio";
-import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
-import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
-import img from "../../../assets/images/Group39.svg";
+// import NewspaperIcon from "@mui/icons-material/Newspaper";
+// import NewReleasesIcon from "@mui/icons-material/NewReleases";
+// import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
+// import FeaturedVideoIcon from "@mui/icons-material/FeaturedVideo";
+// import RadioIcon from "@mui/icons-material/Radio";
+// import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
+// import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
+// import img from "../../../assets/images/Group39.svg";
 import {Note, Notes, TextsmsSharp, Timer} from "@mui/icons-material";
 
 

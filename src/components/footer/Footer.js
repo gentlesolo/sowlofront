@@ -7,10 +7,7 @@ import dropcam from '../../assets/icon/dropcam.png'
 import logitech from '../../assets/icon/logitech-2-1-3-1.png'
 import spotify from '../../assets/icon/Spotify-2-2.png'
 import {makeStyles} from '@mui/styles'
-import {Box, Card, CardContent, InputBase} from "@material-ui/core";
-import InputAdornment from "@mui/material/InputAdornment";
-import SearchIcon from "@mui/icons-material/Search";
-import img from "../../assets/images/Group39.svg";
+
 
 
 const useStyles = makeStyles((theme) =>({

@@ -20,7 +20,7 @@ import {
 } from "@material-ui/core";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
-import img from "../../assets/images/Group39.svg";
+// import img from "../../assets/images/Group39.svg";
 import {Loyalty, TextsmsSharp, Timer} from "@mui/icons-material";
 import brandawareness from "../../assets/images/brandawareness.png";
 import revenuegrowth from "../../assets/images/revenuegrowth.png";
