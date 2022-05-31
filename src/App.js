@@ -1,13 +1,5 @@
 import './App.css';
-import HomePage from './pages/HomePage';
-// import Dashboard from "./pages/Dashboard";
-import Navbar from "./components/navbar/Navbar";
 import React from "react";
-import Modal from 'react-modal';
-import BaseRouter from "./baseRouter";
-
-import Footer from "./components/footer/Footer";
-import Login from "./auth/login";
 import Register from "./auth/Register";
 import Loginn from "./auth/Loginn";
 import PersistLogin from "./auth/PersistLogin"
@@ -16,9 +8,6 @@ import RequireAuth from "./auth/RequireAuth";
 import Layout from "./Layout";
 // import {Campaign} from "@mui/icons-material";
 import Calendar from "./components/Dashboard/Calendar";
-import Admin from "./components/admin/Admin";
-import Socialmedia from "./components/socialmedia/Socialmedia";
-import Campaign from "./components/campaign/Campaign";
 import CreateCampaign from "./components/Dashboard/CreateCampaign";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NewSocialMedia from "./components/socialmedia/NewSocialMedia";
@@ -26,7 +15,7 @@ import NewHomePage from "./pages/NewHomePage";
 import NewCampaign from "./components/campaign/NewCampaign";
 import CampaignSingleFeed from "./components/campaign/CampaignSingleFeed";
 import CampaignSingle from "./components/campaign/CampaignSingle";
-// import Campaign from "./components/socialmedia/Socialmedia";
+
 
 
 const ROLES = {
