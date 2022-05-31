@@ -50,23 +50,23 @@ function App() {
             <Route path="dashboard/calendar" element={<Calendar/>}/>
             <Route path="dashboard" element={<Dashboard/>}/>
 
-            <Route element={<PersistLogin/>}>
+            {/*<Route element={<PersistLogin/>}>*/}
 
-                <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
-                    {/*<Route path="campaign" element={<Campaign />}/>*/}
-                    {/*<Route path="dashboard" element={<Dashboard/>}/>*/}
-                    {/*<Route path="dashboard/calendar" element={<Calendar/>}/>*/}
-                </Route>
+            {/*    <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>*/}
+            {/*        /!*<Route path="campaign" element={<Campaign />}/>*!/*/}
+            {/*        /!*<Route path="dashboard" element={<Dashboard/>}/>*!/*/}
+            {/*        /!*<Route path="dashboard/calendar" element={<Calendar/>}/>*!/*/}
+            {/*    </Route>*/}
 
 
-                <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-                    {/*<Route path="/" element={<HomePage/>}/>*/}
-                    <Route path="dashboard/admin" element={<Admin/>}/>
-                    {/*<Route path="campaign" element={<NewCampaign />}/>*/}
+            {/*    <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>*/}
+            {/*        /!*<Route path="/" element={<HomePage/>}/>*!/*/}
+            {/*        <Route path="dashboard/admin" element={<Admin/>}/>*/}
+            {/*        /!*<Route path="campaign" element={<NewCampaign />}/>*!/*/}
 
-                    {/*<Route path="dashboard/calendar" element={<Calendar/>}/>*/}
-                </Route>
-            </Route>
+            {/*        /!*<Route path="dashboard/calendar" element={<Calendar/>}/>*!/*/}
+            {/*    </Route>*/}
+            {/*</Route>*/}
         </Route>
 
         <Route>
