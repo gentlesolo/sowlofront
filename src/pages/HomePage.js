@@ -16,7 +16,7 @@ import Learning1 from "../components/HomePage/Learning1";
 const HomePage = () => {
   return (
       <div>
-          {/*<Banner/>*/}
+          <Banner/>
           <ClientResult />
           <Cat1/>
           <FeaturedCamp/>
