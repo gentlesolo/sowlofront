@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) =>({
     catleftsection: {
         //paddingLeft: "177px",
         padding: "1% 0",
-        //alignItems: "center",
+        alignItems: "center",
         //marginTop: theme.spacing(29),
         [theme.breakpoints.down("sm")]: {
             backgroundColor: "#FFFFFF",
@@ -72,7 +72,7 @@ const Footer = () => {
             <Grid container className={classes.catcontainer}>
 
                 <Grid item sm={12} xs={12} className={classes.catleftsection}>
-                    <Typography variant="h6" noWrap component="div" sx={{color: '#1A3454'}}>
+                    <Typography variant="h6" noWrap component="div" sx={{color: '#1A3454', textAlign: 'center', fontSize: '12px'}}>
                         Copyright All Right Reserved
                     </Typography>
                     {/*<Grid className={classes.compcontainer}>*/}

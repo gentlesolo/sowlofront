@@ -2,6 +2,9 @@ import React from 'react';
 import {Card, CardActionArea, CardActions, CardContent, Typography} from "@mui/material";
 import {makeStyles} from "@mui/styles";
 import Button from "@mui/material/Button";
+import {useSelector} from "react-redux";
+import {selectAllContents} from "../../../features/content/contentSlice";
+import {Grid} from "@material-ui/core";
 
 const useStyles = makeStyles(() =>({
     card: {
@@ -26,14 +29,19 @@ const useStyles = makeStyles(() =>({
     },
 }))
 
-const Contents = ({content}) => {
+const Contents = ({selectedContent, setSelectedContent}) => {
+    const contents = useSelector(selectAllContents)
     const classes = useStyles()
     return (
-        <Card className={classes.card}>
+
+        <Grid>
+        {contents.map((content, index) =>(
+        <Card key={index} className={classes.card} onClick={() => setSelectedContent(content.content)} >
             <CardActionArea>
                 <CardContent >
                     <Typography variant="body2" component="div" sx={{fontSize: "16px"}}>
-                        {content.content.substr(0, 80) + '...'}
+                        {/*{content.content.substr(0, 80) + '...'}*/}
+                        {content.content.length > 80 ? `${content.content.substring(0, 70)}...` : content.content}
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -49,6 +57,8 @@ const Contents = ({content}) => {
                 </Button>
             </CardActions>
         </Card>
+            ))}
+        </Grid>
     );
 };
 

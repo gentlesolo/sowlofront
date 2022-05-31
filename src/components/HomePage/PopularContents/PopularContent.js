@@ -10,7 +10,7 @@ import {contents} from "../../../data";
 
 const useStyles = makeStyles(() =>({
     container: {
-        backgroundColor: '#EEF2F6',
+        backgroundColor: '#282664',
         width: '120%',
         height: '60vh',
         margin: '150px 0px',

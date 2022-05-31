@@ -16,24 +16,16 @@ const pages = [
     path: ""
   },
   {
-    name: 'Content',
-    path: "content"
+    name: 'Social Media',
+    path: "social-media"
   },
   {
-    name: 'Events',
-    path: "events"
+    name: 'Campaign',
+    path: "campaign"
   },
   {
-    name: 'Blog',
-    path: "blog"
-  },
-  {
-    name: 'Pages',
-    path: "pages"
-  },
-  {
-    name: 'Contact',
-    path: "contact"
+    name: 'Dashboard',
+    path: "dashboard"
   },
 ]
 
@@ -42,39 +34,50 @@ const Navbar = () => {
   const classes = useStyles()
 
   return (
-      <AppBar position="fixed" sx={{background: 'white', color: 'black'}}>
+      <AppBar position="sticky" sx={{background: 'white', color: 'black'}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }} >
-              SOWLOO
+              SOWLO
             </Typography>
             <Divider orientation="vertical" variant="middle" flexItem  sx={{ minHeight: "5px", height: '30px', color: "#EDEDED", marginTop: "20px"}}/>
 
-            <Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: { xs: 'none', md: 'flex', fontSize: "15px",  marginLeft: "7px"} }}>
-              Explore
-            </Typography>
-            <Divider orientation="vertical" variant="middle" flexItem  style={{ minHeight: "10px", height: "30px", color: "#EDEDED", marginTop: "20px" }}/>
+            {/*<Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: { xs: 'none', md: 'flex', fontSize: "15px",  marginLeft: "7px"} }}>*/}
+            {/*  Explore*/}
+            {/*</Typography>*/}
+            {/*<Divider orientation="vertical" variant="middle" flexItem  style={{ minHeight: "10px", height: "30px", color: "#EDEDED", marginTop: "20px" }}/>*/}
 
 
             <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex'}}}>
               {pages.map((page) => (
                   <MenuItem key={page}>
                     <Link to={`/${page.path}`} style={{textDecoration: 'none'}}>
-                      <Button disableRipple endIcon={page.name === "Contact"? null : <KeyboardArrowDownIcon/>} sx={{color: "black", padding: '2px', fontSize:"14px", border: "none", textTransform: 'capitalize'}}>{page.name}</Button>
+                      <Button sx={{color: "black", padding: '2px', fontSize:"14px",
+                        border: "none", textTransform: 'capitalize'}}>{page.name}</Button>
                     </Link>
                   </MenuItem>
               ))}
             </Box>
-            <Box sx={{ flexGrow: 0 , display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'space-between' }}>
+            <Box sx={{ flexGrow: 0 , display: { xs: 'none', md: 'flex' }, alignItems: 'center',
+              justifyContent: 'space-between' }}>
               <IconButton size="large" aria-label="search" color="inherit">
                 <SearchIcon sx={{padding: '3px'}} onClick={() => setOpen(true)}/>
               </IconButton>
-              <Divider orientation="vertical" variant="middle" flexItem  style={{ minHeight: "30px", color: "gray", marginTop: "15px"}}/>
+              <Divider orientation="vertical" variant="middle" flexItem
+                       style={{ minHeight: "30px", color: "gray", marginTop: "15px"}}/>
               <img src={group} style={{padding: '0 23px'}}/>
-              <Divider orientation="vertical" variant="middle" flexItem  style={{ minHeight: "30px", color: "gray", marginTop: "15px"}}/>
+              <Divider orientation="vertical" variant="middle" flexItem
+                       style={{ minHeight: "30px", color: "gray", marginTop: "15px"}}/>
 
-              <Typography noWrap sx={{padding: '0 15px', cursor: "pointer"}}>Log in</Typography>
-              <Button variant="filled" sx={{ border: 'none', background: '#dedbf3', borderRadius: '60px', padding: '10px 30px', fontWeight: 'bold', color: '#6440FB', textTransform: 'capitalize'}}>Sign Up</Button>
+              <Button href="/login" variant="text">Login</Button>
+              <Button
+                  href="/register"
+                  variant="filled"
+                  sx={{ border: 'none', background: '#dedbf3',
+                    borderRadius: '60px', padding: '10px 30px',
+                    fontWeight: 'bold', color: '#6440FB',
+                    textTransform: 'capitalize'}}>Sign Up
+              </Button>
             </Box>
           </Toolbar>
         </Container>

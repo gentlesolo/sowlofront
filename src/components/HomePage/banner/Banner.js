@@ -1,10 +1,11 @@
 // import { makeStyles } from '@mui/styles';
 import {Box, Button, Grid, IconButton, InputBase, makeStyles, Typography} from "@material-ui/core";
 import SearchIcon from '@mui/icons-material/Search';
-import img from "../../../assets/images/Group39.svg"
+import img from "../../../assets/images/Girl in a phone magnetises likes and coins.svg"
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import React from "react";
+import {Image} from "@mui/icons-material";
 // import styled from "@emotion/styled";
 // import {Home} from "@mui/icons-material";
 
@@ -25,10 +26,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     rightsection: {
-        paddingLeft: "21.71px",
-        paddingRight: "198px",
+        paddingLeft: "1.71px",
+        paddingRight: "10px",
         alignItems: "center",
-        marginTop: theme.spacing(7),
+        marginTop: theme.spacing(15),
         [theme.breakpoints.down("sm")]: {
             marginBottom: theme.spacing(0),
             marginTop: theme.spacing(-5),
@@ -127,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
     },
     btn: {
         borderRadius: "5px",
-        backgroundColor: "#160647",
+        backgroundColor: "#6440FB",
         color: "white",
         width: "30%",
         height: "8%",
@@ -144,6 +145,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     image: {
+        width: "90%",
         [theme.breakpoints.down("sm")]: {
             width: "95%",
             //padding: "-35px",
@@ -154,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(5),
     },
     media: {
-        height: '250px',
+        height: '150px',
         display: "none",
         [theme.breakpoints.up("sm")]: {
             height: '150',
@@ -186,20 +188,30 @@ function Banner() {
                         Sowlo is the Social Media Tool That Helps You Post Quality Contents Everyday.
                     </Typography>
                     {/*<FormControl variant="filled">*/}
-                        <InputBase
-                            placeholder={"What do you want to promote today?"}
-                            endAdornment={<InputAdornment position="end"><SearchIcon style={{backgroundColor: '#6440FB', color: '#ffffff', borderRadius: '50%', padding: '10px', marginRight: '20px'}}/></InputAdornment>}
-                            aria-describedby="outlined-weight-helper-text"
-                            className={classes.search}
-                        />
+                    {/*    <InputBase*/}
+                    {/*        placeholder={"What do you want to promote today?"}*/}
+                    {/*        endAdornment={<InputAdornment position="end"><SearchIcon style={{backgroundColor: '#6440FB', color: '#ffffff', borderRadius: '50%', padding: '10px', marginRight: '20px'}}/></InputAdornment>}*/}
+                    {/*        aria-describedby="outlined-weight-helper-text"*/}
+                    {/*        className={classes.search}*/}
+                    {/*    />*/}
+                    <Button className={classes.btn}
+                            size="large"
+                            variant="contained"
+                            href="/campaign">Get Started
+                    </Button>
                     {/*</FormControl>*/}
-                    <Typography className={classes.subtrending} variant="h6" noWrap component="div" sx={{}}>
-                        Trending Search: Development, Business, Design, Marketing
-                    </Typography>
+                    {/*<Typography className={classes.subtrending} variant="h6" noWrap component="div" sx={{}}>*/}
+                    {/*    Trending Search: Development, Business, Design, Marketing*/}
+                    {/*</Typography>*/}
                 </Grid>
                 <Grid item sm={6} xs={12} alignItems="center" className={classes.rightsection}>
-                    <Box component="img" src={img} className={classes.image}/>
+                    {/*<Box component="img" src={img} className={classes.image}/>*/}
                     {/*<Image src={img} width="50%" object-fit="contain"/>*/}
+                    <img
+                        className={classes.image}
+                        src={img}
+                        loading="lazy"
+                    />
                 </Grid>
             </Grid>
         </div>

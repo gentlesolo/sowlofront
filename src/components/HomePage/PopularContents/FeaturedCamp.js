@@ -46,9 +46,9 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "100%",
         padding: "0 15%",
         width: "100%",
-        backgroundColor: "#EEF2F6",
+        backgroundColor: "#282664",
         [theme.breakpoints.down("sm")]: {
-            padding: "0 5%",
+            padding: "8% 2%",
         },
     },
     box: {
@@ -95,7 +95,18 @@ const useStyles = makeStyles((theme) => ({
     catheading: {
         fontSize: '30px',
         fontWeight: '700',
-        color: '#140342',
+        color: '#ffffff',
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center",
+        },
+    },
+    catsubhead: {
+        fontSize: '15px',
+        fontWeight: '400',
+        color: '#ffffff',
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center",
+        },
     },
     camphead: {
         textAlign: "left",
@@ -204,10 +215,10 @@ function FeaturedCamp() {
     return (
         <Container className={classes.categorycontainer}>
             <Grid>
-                <Typography variant="h5" noWrap component="div" sx={{color: '#140342'}} className={classes.catheading}>
-                    Top Social Media Campaigns
+                <Typography variant="h5" component="div" sx={{color: '#ffffff'}} className={classes.catheading}>
+                    Featured Social Media Campaigns
                 </Typography>
-                <Typography variant="h6" noWrap component="div" sx={{color: '#4F547B'}}>
+                <Typography variant="h6" component="div" sx={{color: '#ffffff'}} className={classes.catsubhead}>
                     Let us help you automate your social media campaign.
                 </Typography>
             </Grid>
@@ -228,10 +239,11 @@ function FeaturedCamp() {
                                             //src={category.icon}
                                             image={category.icon}
                                             className={classes.icon}
+                                            loading="lazy"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div" className={classes.camphead}>
-                                                {category.name.substr(0, 50) + '...'}
+                                                {category.name.substr(0, 15) + '...'}
                                             </Typography>
                                             <Typography variant="body2" color="text.secondary" className={classes.campsub}>
                                                 {category.content}
